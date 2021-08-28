@@ -3,23 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>HW2</artifactId>
+        <artifactId>dao</artifactId>
         <groupId>com.galil</groupId>
         <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dao</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>dao-api</module>
-        <module>dao-in-memory-impl</module>
-        <module>dao-fs-impl</module>
-    </modules>
+    <artifactId>dao-in-memory-impl</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.galil</groupId>
-            <artifactId>entities</artifactId>
+            <artifactId>dao-api</artifactId>
             <version>1.0</version>
             <scope>compile</scope>
         </dependency>
